@@ -14,13 +14,6 @@ st.title("Anthropic theme")
 
 if st.checkbox("Enable CSS hacks", True):
     
-    titleFontSize = "40px"
-    titleFontWeight = "500"
-    headerFontSize = "32px"
-    headerFontWeight = "500"
-    subheaderFontSize = "24px"
-    subheaderFontWeight = "500"
-    
     pageHoverBackgroundColor = "#deddd1"
     pageFontSize = "14px"
     
@@ -35,20 +28,6 @@ if st.checkbox("Enable CSS hacks", True):
             -webkit-font-smoothing: antialiased;
         }}
         
-        h1 {{
-            font-size: {titleFontSize} !important;
-            font-weight: {titleFontWeight} !important;
-        }}
-        
-        h2 {{
-            font-size: {headerFontSize} !important;
-            font-weight: {headerFontWeight} !important;
-        }}
-        
-        h3 {{
-            font-size: {subheaderFontSize} !important;
-            font-weight: {subheaderFontWeight} !important;
-        }}
         
         /* First page in sidebar nav */
         [data-testid="stSidebarNav"] li:first-of-type a {{

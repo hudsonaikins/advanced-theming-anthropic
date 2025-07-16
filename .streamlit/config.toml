@@ -14,6 +14,9 @@ font = "Styrene B"
 codeFont = "Fira Code"
 codeBackgroundColor = "#ecebe4"
 showSidebarBorder = true
+headingFontSizes = ["40px", "32px", "24px"]
+headingFontWeights = 500
+
 
 [theme.sidebar]
 backgroundColor = "#e8e7dd"
