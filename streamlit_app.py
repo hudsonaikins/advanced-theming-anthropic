@@ -15,7 +15,6 @@ st.title("Anthropic theme")
 if st.checkbox("Enable CSS hacks", True):
     
     pageHoverBackgroundColor = "#deddd1"
-    pageFontSize = "14px"
     
     activePageBackgroundColor = "#deddd1"
     activePageHoverBackgroundColor = "#deddd1"
@@ -40,9 +39,6 @@ if st.checkbox("Enable CSS hacks", True):
         /* Other pages in sidebar nav */
         [data-testid="stSidebarNav"] li a:hover {{
             background-color: {pageHoverBackgroundColor} !important;
-        }}
-        [data-testid="stSidebarNav"] li a span {{
-            font-size: {pageFontSize} !important;
         }}
         </style>
         """
