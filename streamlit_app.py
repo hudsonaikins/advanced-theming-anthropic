@@ -12,37 +12,15 @@ st.set_page_config("Anthropic theme", "🟠")
 st.logo("https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/anthropic.png")
 st.title("Anthropic theme")
 
-if st.checkbox("Enable CSS hacks", True):
-    
-    pageHoverBackgroundColor = "#deddd1"
-    
-    activePageBackgroundColor = "#deddd1"
-    activePageHoverBackgroundColor = "#deddd1"
-    
-    
-    st.html(
-        f"""
-        <style>
-        body {{
-            -webkit-font-smoothing: antialiased;
-        }}
-        
-        
-        /* First page in sidebar nav */
-        [data-testid="stSidebarNav"] li:first-of-type a {{
-            background-color: {activePageBackgroundColor} !important;
-        }}
-        [data-testid="stSidebarNav"] li:first-of-type a:hover {{
-            background-color: {activePageHoverBackgroundColor} !important;
-        }}
-        
-        /* Other pages in sidebar nav */
-        [data-testid="stSidebarNav"] li a:hover {{
-            background-color: {pageHoverBackgroundColor} !important;
-        }}
-        </style>
-        """
-    )
+st.html(
+    f"""
+    <style>
+    body {{
+        -webkit-font-smoothing: antialiased;
+    }}
+    </style>
+    """
+)
     
 
 def page1():
